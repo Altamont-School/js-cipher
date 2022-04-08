@@ -14,17 +14,7 @@ decrypted.addEventListener("keyup", function (event) {
 // function to encrypt DO YOUR WORK INSIDE THIS FUNCTION
 function encrypt(msg) {
   msg = msg.split("");
+//   work should be happening between these two lines of code
   let encryptedMsg = "";
-  msg.map((letter, i) => {
-    let char = msg[i];
-    let index = alphabet.indexOf(letter);
-    if (index !== -1 && index <= 22) {
-      encryptedMsg += alphabet[index + 3];
-    } else if (index !== -1 && index > 22) {
-      encryptedMsg += alphabet[index - 23];
-    } else {
-      encryptedMsg += char;
-    }
-  });
   return encryptedMsg;
 }
