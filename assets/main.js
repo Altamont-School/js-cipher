@@ -14,7 +14,7 @@ decrypted.addEventListener("keyup", function (event) {
 // function to encrypt DO YOUR WORK INSIDE THIS FUNCTION
 function encrypt(msg) {
   msg = msg.split("");
-//   work should be happening between these two lines of code
   let encryptedMsg = "";
+  //   work should be happening between these two lines of code
   return encryptedMsg;
 }
