@@ -16,14 +16,13 @@ function encrypt(msg) {
   msg = msg.split("");
   let encryptedMsg = "";
   msg.map((letter, i) => {
-    let char = msg[i];
     let index = alphabet.indexOf(letter);
     if (index !== -1 && index <= 22) {
       encryptedMsg += alphabet[index + 3];
     } else if (index !== -1 && index > 22) {
       encryptedMsg += alphabet[index - 23];
     } else {
-      encryptedMsg += char;
+      encryptedMsg += letter;
     }
   });
   return encryptedMsg;
